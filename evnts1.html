@@ -1,0 +1,33 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <h1> learn events</h1>
+    <button>click here to change the background clour</button>
+    <div>what is the time</div>
+    <br>
+    <br>
+    <script>
+        var btn = document.querySelector('button');
+        btn.addEventListener('click', function () {
+            document.querySelector('Body').style.backgroundcolour = "green";
+        });
+        var time = document.querySelector('div');
+        time.addEventListener('click',function(){
+    time.innerHTML = Date();})
+
+
+    </script>
+</body>
+
+</html>
