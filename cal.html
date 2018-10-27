@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div id="clock">11:38:10</div>
+
+    <script>
+        setInterval(displayclock ,500);
+
+        function displayclock() {
+
+            // INDICATING VARIABLE FOR HOURS(hrs0),MINUTES(min), SECONDS(sec)
+            var time = new Date();
+            var hrs = time.getHours();
+            var min = time.getMinutes();
+            var sec = time.getSeconds();
+            time.innerHTML = Date();
+            var en = 'AM';
+
+            // SHOWING CURRENT DATE AND TIME PROCEDURE//
+
+            var time = document.querySelector('div');
+            time.addEventListener('click', function () {
+                time.innerHTML = Date();
+            })
+            if (hrs > 12) {
+                en = 'pm';
+            }
+
+            document.getElementById('clock').innerHTML = hrs + ':' + min + ':' + sec + '' + en;
+        }
+
+
+    </script>
+</body>
+
+</html>
